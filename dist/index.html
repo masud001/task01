@@ -2,31 +2,600 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="This is html page. converted from figma design to html."
+		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Electronic First</title>
-	<script defer src="bundel.js"></script><link href="style.css" rel="stylesheet"></head>
+		<title>Assignment Task</title>
+		<!-- google font  -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Roboto:wght@100;300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- font awesome 5 free  -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+			integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- apex chart cdn css  -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.42.0/apexcharts.min.css"
+			integrity="sha512-nnNXPeQKvNOEUd+TrFbofWwHT0ezcZiFU5E/Lv2+JlZCQwQ/ACM33FxPoQ6ZEFNnERrTho8lF0MCEH9DBZ/wWw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	<script defer src="bundel.js"></script><link href="bundel.style.css" rel="stylesheet"></head>
 	<body>
-		<h1>hello</h1>
-		<img id="profileImg" alt="" />
-		<div class="flex__div">
-			<div class="flex__item">
-				<h1>flex 1</h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam harum omnis
-					molestiae dolorem labore perspiciatis placeat ipsam, soluta temporibus
-					consequatur aperiam alias autem voluptatum pariatur facere architecto ut
-					laudantium ab?
-				</p>
+		<!-- header section START  -->
+		<header class="header__section">
+			<div class="header_container">
+				<div id="mobileMenuBar" class="mobile__menu_icon">
+					<span><i class="fas fa-bars"></i></span>
+				</div>
+				<div class="header__logo">
+					<img id="HeaderLogo" alt="header logo" />
+				</div>
+				<nav id="mobileMenu" class="header__navigation">
+					<ul>
+						<li>
+							<a href="/#"
+								>Product <span><i class="fas fa-angle-down"></i></span
+							></a>
+						</li>
+						<li><a href="/#">about us</a></li>
+						<li><a href="/#">contacts</a></li>
+					</ul>
+				</nav>
+				<div class="header__buttons">
+					<a href="/#" class="header_button active">get started</a>
+					<a href="/#" class="header_button">login</a>
+				</div>
 			</div>
-			<div class="flex__item">
-				<h1>flex 1</h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam harum omnis
-					molestiae dolorem labore perspiciatis placeat ipsam, soluta temporibus
-					consequatur aperiam alias autem voluptatum pariatur facere architecto ut
-					laudantium ab?
-				</p>
+		</header>
+		<!-- header section END  -->
+
+		<!-- hero section START  -->
+		<section class="hero__section">
+			<div class="hero__container">
+				<div class="hero__text">
+					<h1>Lore <span>ipsum.</span></h1>
+					<h1>Dolor <span>sit.</span></h1>
+					<p>
+						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+						eu fugiat nulla pariatu. Sed ut perspiciatis unde omnis iste natus error.
+					</p>
+					<div class="hero__buttons">
+						<a href="/#" class="hero__button">Viverra orci sagittis</a>
+						<a href="/#" class="hero__button active">
+							<span><i class="fas fa-play-circle"></i></span> Get a demo</a
+						>
+					</div>
+				</div>
+				<div class="hero__image" id="heroImage"></div>
 			</div>
-		</div>
+		</section>
+		<!-- hero section END  -->
+
+		<!-- table section START  -->
+		<section class="table__section">
+			<div class="table__container">
+				<div class="section__title">
+					<h1>
+						Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+						suscipit
+					</h1>
+				</div>
+				<div class="table_wrapper variant01">
+					<table>
+						<thead>
+							<tr>
+								<th>Source</th>
+								<th>Ad</th>
+								<th>Cost</th>
+								<th>Sales</th>
+								<th>
+									<div>First time</div>
+									<div>customers</div>
+								</th>
+								<th>Revenue</th>
+								<th>ROAS</th>
+								<th>CAC</th>
+								<th>F.T.ROAS</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Youtube</td>
+								<td>Male_18+_UGC_Video</td>
+								<td>$2,567.00</td>
+								<td>120</td>
+								<td>90</td>
+								<td>$10,800.00</td>
+								<td class="color_mark_10">4.21</td>
+								<td>$28.52</td>
+								<td>3.16</td>
+							</tr>
+							<tr>
+								<td>Adwords</td>
+								<td>US_Generic_Search</td>
+								<td>$1,233.00</td>
+								<td>98</td>
+								<td>71</td>
+								<td>$5,880.00</td>
+								<td class="color_mark_10">4.77</td>
+								<td>$17.48</td>
+								<td>3.43</td>
+							</tr>
+							<tr>
+								<td>Adwords</td>
+								<td>SKU2343_shoppong</td>
+								<td>$3,120.00</td>
+								<td>150</td>
+								<td>127</td>
+								<td>$14,700.00</td>
+								<td class="color_mark_10">4.71</td>
+								<td>$24.55</td>
+								<td class="color_mark_10">3.99</td>
+							</tr>
+							<tr>
+								<td>Facebook</td>
+								<td>All_25+_Static_split_screen</td>
+								<td>$5,400.00</td>
+								<td>145</td>
+								<td>111</td>
+								<td>$11,600.00</td>
+								<td>2.15</td>
+								<td>$48.54</td>
+								<td>1.65</td>
+							</tr>
+							<tr>
+								<td>Instagram</td>
+								<td>W_25+_Static_split_screen</td>
+								<td>$3,210.00</td>
+								<td>280</td>
+								<td>177</td>
+								<td>$23,800.00</td>
+								<td class="color_mark_20">7.41</td>
+								<td>$18.17</td>
+								<td class="color_mark_20">4.68</td>
+							</tr>
+							<tr>
+								<td>TikTok</td>
+								<td>UGS_video_2</td>
+								<td>$3,100.00</td>
+								<td>120</td>
+								<td>110</td>
+								<td>$7,080.00</td>
+								<td>2.28</td>
+								<td>$28.14</td>
+								<td>2.10</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+		<!-- table section END  -->
+		<!-- social section START  -->
+
+		<section class="social__section">
+			<div class="social__container">
+				<div class="social__content">
+					<h2>Sed ut perspiciatis unde omnis iste natus error. <span>Try out!</span></h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						tempor incididunt ut labore ullamco esse cillium
+					</p>
+					<a href="/#" class="try_out__button active">try out now!</a>
+				</div>
+				<div class="social__icons">
+					<div class="social__icons_column">
+						<span><img id="googleAdds" alt="Goolge add icon" /></span>
+						<span><img id="facebook" alt="Facebook icon" /></span>
+						<span><img id="shopify" alt="shopify icon" /></span>
+					</div>
+					<div class="social__icons_column">
+						<span><img id="tiktok" alt="tiktok icon" /> </span>
+						<span
+							><img id="pinterest" alt="Facebook icon" />
+							<p>comming soon</p></span
+						>
+						<span
+							><img id="telegram" alt="telegram icon" />
+							<p>comming soon</p></span
+						>
+					</div>
+					<div class="social__icons_column">
+						<span
+							><img id="snapchat" alt="snapchat icon" />
+							<p>comming soon</p></span
+						>
+						<span
+							><img id="taboola" alt="taboola icon" />
+							<p>comming soon</p></span
+						>
+						<span
+							><img id="outbrain" alt="outbrain icon" />
+							<p>comming soon</p></span
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- social section END  -->
+		<section class="social__bottom">
+			<div class="social__bottom_container">
+				<div class="single_wizard">
+					<img id="iconImg01" alt="icon meserment" />
+					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+					<p>
+						Convallis a cras semper auctor neque. Fringilla est ullamcorper eget nulla
+						facilisi etiam dignissim, eiusmod tempor incididunt ut labore
+					</p>
+				</div>
+				<div class="single_wizard">
+					<img id="iconImg02" alt="icon meserment" />
+					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+					<p>
+						Convallis a cras semper auctor neque. Fringilla est ullamcorper eget nulla
+						facilisi etiam dignissim, eiusmod tempor incididunt ut labore
+					</p>
+				</div>
+				<div class="single_wizard">
+					<img id="iconImg03" alt="icon meserment" />
+					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+					<p>
+						Convallis a cras semper auctor neque. Fringilla est ullamcorper eget nulla
+						facilisi etiam dignissim, eiusmod tempor incididunt ut labore
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="accordion__section">
+			<div class="accordion__container">
+				<div class="accordion__content">
+					<h3>Nemo enim ipsam quia</h3>
+					<p>
+						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+						consectetur, adipisci velit, sed qu nemo enim
+					</p>
+					<div class="accondions">
+						<div class="single_accordion">
+							<span><i class="far fa-check-circle"></i></span>
+							<span><p>Omnis iste natus</p></span>
+						</div>
+						<div class="single_accordion">
+							<span><i class="far fa-check-circle"></i></span>
+							<span><p>Omnis iste natus</p></span>
+						</div>
+						<div class="single_accordion">
+							<span><i class="far fa-check-circle"></i></span>
+							<span><p>Omnis iste natus</p></span>
+						</div>
+						<div class="single_accordion">
+							<span><i class="far fa-check-circle"></i></span>
+							<span><p>Omnis iste natus</p></span>
+						</div>
+					</div>
+					<a href="/#" class="accordion_button">try out now!</a>
+				</div>
+				<div class="accordion__media">
+					<img id="accondionsImg" alt="show graph data" />
+				</div>
+			</div>
+		</section>
+
+		<!-- graph section START  -->
+		<section class="graph__section">
+			<div class="graph__container">
+				<div class="section__title">
+					<h3>Lorem Ipsum is simply dummy text of the printing and typesetting</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						tempor incididunt ut labore
+					</p>
+				</div>
+				<div class="graph__area">
+					<!-- NOTE: graph here  -->
+					<div id="chartId"></div>
+				</div>
+			</div>
+			<div class="graph_table_container">
+				<div class="graph__single_table">
+					<h5>Facebook data</h5>
+					<div class="table_wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>Ad name</th>
+									<th>Orders</th>
+									<th>ROAS</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>All_25+_Static_split_screen</td>
+									<td>12</td>
+									<td>3.2</td>
+								</tr>
+								<tr>
+									<td>M_25+_Static_split_screen_2</td>
+									<td>2</td>
+									<td class="color_mark_30">1.5</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="graph__single_table">
+					<h5>Logoipsum data</h5>
+					<div class="table_wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>Ad name</th>
+									<th>Orders</th>
+									<th>ROAS</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>All_25+_Static_split_screen</td>
+									<td>10</td>
+									<td>2.8</td>
+								</tr>
+								<tr>
+									<td>M_25+_Static_split_screen_2</td>
+									<td>8</td>
+									<td class="color_mark_30">3</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- graph section END  -->
+
+		<section class="graph__description">
+			<div class="graph__description_container">
+				<div class="graph__description_content">
+					<h3>Consectetur adipiscing elit</h3>
+					<p>
+						Convallis a cras semper auctor neque. Fringilla est ullamcorper eget nulla
+						facilisi etiam dignissim viverra
+					</p>
+				</div>
+				<div class="graph__description_graph">
+					<div class="graph__icons_column">
+						<span><img id="firstGraphIcon" alt="first graph add icon" /></span>
+						<p class="first">First touch</p>
+					</div>
+					<div class="graph__icons_column">
+						<span><img id="lastGraphIcon" alt="last graph add icon" /></span>
+						<p class="last">last touch</p>
+					</div>
+					<div class="graph__icons_column">
+						<h4>3</h4>
+						<h5>
+							+ coustom <br />
+							one
+						</h5>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="graph__description_share">
+			<div class="graph__description_share_container">
+				<div class="section__title">
+					<h3>
+						Ullamcorper morbi tincidunt ornare massa eget. Quam viverra orci sagittis eu
+						volutpat odio
+					</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						tempor incididunt ut labore
+					</p>
+				</div>
+				<div class="socia__share">
+					<div class="social__icons_column">
+						<span><img id="facebookId" alt="Facebook icon" /></span>
+						<div class="social__icons_row">
+							<span><img id="googleAddsId" alt="Goolge add icon" /></span>
+							<span><img id="shopifyId" alt="shopify icon" /></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- table section START  -->
+		<section class="table__section">
+			<div class="table__container">
+				<div class="table_wrapper variant02">
+					<table>
+						<thead>
+							<tr>
+								<th>date</th>
+								<th>users</th>
+								<th>week 0</th>
+								<th>week 1</th>
+								<th>week 2</th>
+								<th>week 3</th>
+								<th>week 4</th>
+								<th>week 5</th>
+								<th>week 6</th>
+								<th>week 7</th>
+								<th>week 8</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>06-17 - 06-23</td>
+								<td>1476</td>
+								<td class="color_mark_10">$209</td>
+								<td class="color_mark_10">$219</td>
+								<td class="color_mark_10">$230</td>
+								<td class="color_mark_10">$242</td>
+								<td class="color_mark_20">$254</td>
+								<td class="color_mark_20">$267</td>
+								<td class="color_mark_20">$280</td>
+								<td>$294</td>
+								<td>$309</td>
+							</tr>
+							<tr>
+								<td>06-17 - 06-23</td>
+								<td>1476</td>
+								<td class="color_mark_10">$209</td>
+								<td class="color_mark_10">$219</td>
+								<td class="color_mark_10">$230</td>
+								<td class="color_mark_10">$242</td>
+								<td class="color_mark_30">$254</td>
+								<td class="color_mark_30">$267</td>
+								<td class="color_mark_30">$280</td>
+								<td class="color_mark_30">$294</td>
+								<td>$309</td>
+							</tr>
+							<tr>
+								<td>06-17 - 06-23</td>
+								<td>1476</td>
+								<td class="color_mark_10">$209</td>
+								<td class="color_mark_10">$219</td>
+								<td class="color_mark_10">$230</td>
+								<td class="color_mark_10">$242</td>
+								<td class="color_mark_20">$254</td>
+								<td class="color_mark_20">$267</td>
+								<td class="color_mark_10">$280</td>
+								<td>$294</td>
+								<td>$309</td>
+							</tr>
+							<tr>
+								<td>06-17 - 06-23</td>
+								<td>1476</td>
+								<td>$209</td>
+								<td>$219</td>
+								<td>$230</td>
+								<td>$242</td>
+								<td>$254</td>
+								<td>$267</td>
+								<td>$280</td>
+								<td>$294</td>
+								<td>$309</td>
+							</tr>
+							<tr>
+								<td>06-17 - 06-23</td>
+								<td>1476</td>
+								<td class="color_mark_10">$209</td>
+								<td class="color_mark_10">$219</td>
+								<td class="color_mark_10">$230</td>
+								<td class="color_mark_10">$242</td>
+								<td class="color_mark_30">$254</td>
+								<td>$267</td>
+								<td>$280</td>
+								<td>$294</td>
+								<td>$309</td>
+							</tr>
+							<tr>
+								<td>06-17 - 06-23</td>
+								<td>1476</td>
+								<td class="color_mark_20">$209</td>
+								<td class="color_mark_20">$219</td>
+								<td class="color_mark_20">$230</td>
+								<td class="color_mark_30">$242</td>
+								<td>$254</td>
+								<td>$267</td>
+								<td>$280</td>
+								<td>$294</td>
+								<td>$309</td>
+							</tr>
+							<tr>
+								<td>06-17 - 06-23</td>
+								<td>1476</td>
+								<td class="color_mark_30">$209</td>
+								<td class="color_mark_30">$219</td>
+								<td class="color_mark_30">$230</td>
+								<td>$242</td>
+								<td>$254</td>
+								<td>$267</td>
+								<td>$280</td>
+								<td>$294</td>
+								<td>$309</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+		<!-- table section END  -->
+
+		<section class="apply__section">
+			<div class="apply__container">
+				<div class="apply__content">
+					<div class="section__title">
+						<h3>Ullamcorper morbi tincidunt ornare massa eget</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+							tempor incididunt ut labore
+						</p>
+					</div>
+				</div>
+				<div class="apply__button_area">
+					<a href="/#" class="apply_button">apply</a>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer__section">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<div class="title">Products</div>
+					<ul>
+						<li><a href="/#">Features</a></li>
+						<li><a href="/#">Enterprice</a></li>
+						<li><a href="/#">Innovation</a></li>
+						<li><a href="/#">Offline</a></li>
+					</ul>
+				</div>
+				<div class="footer__menu">
+					<div class="title">Company</div>
+					<ul>
+						<li><a href="/#">About</a></li>
+						<li><a href="/#">Our Story</a></li>
+						<li><a href="/#">Careers</a></li>
+					</ul>
+				</div>
+				<div class="footer__menu">
+					<div class="title">Support</div>
+					<ul>
+						<li><a href="/#">Documentation</a></li>
+						<li><a href="/#">Community</a></li>
+						<li><a href="/#">Contact</a></li>
+						<li><a href="/#">FAQ</a></li>
+					</ul>
+				</div>
+				<div class="footer__description">
+					<img id="footerLogo" alt="footer logo" />
+					<h4>Tristique senectus et netus et malesuada fames</h4>
+					<p>&copy; 2023 Logoipsum. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- apex chart js cdn link -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.42.0/apexcharts.min.js"
+			integrity="sha512-HctQcT5hnI/elQck4950pvd50RuDnjCSGSoHI8CNyQIYVxsUoyJ+gSQIOrll4oM/Z7Kfi7WCLMIbJbiwYHFCpA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 	</body>
 </html>
