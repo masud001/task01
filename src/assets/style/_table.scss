@@ -1,0 +1,222 @@
+@import "colors", "variables";
+.table__section{
+    .table__container{
+        width: 90%;
+        margin: 0 auto;
+        .section__title{
+            padding-bottom: 3rem;
+            margin: 0 auto;
+            text-align: center;
+            @media (max-width:$breakpoint-mobile-sm) {
+                    padding-bottom: 1.5rem;
+            }
+            @media only screen and (min-width:$breakpoint-mobile-sm) and (max-width:$breakpoint-mobile) {
+                padding-bottom: 2rem;
+            }
+            h1{
+                color: var(--text, #181F1B);
+                text-align: center;
+                font-family: Roboto;
+                font-size: 3.1875rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 127%;
+                @media (max-width:$breakpoint-mobile-sm) {
+                    font-size: 1.4rem;
+                }
+                @media only screen and (min-width:$breakpoint-mobile-sm) and (max-width:$breakpoint-mobile) {
+                    font-size: 2rem;
+                }
+                @media (min-width:$breakpoint-mobile) {
+                    font-size: 3.1875rem;
+                }
+            }
+        }
+        .table_wrapper{
+            @media (max-width:$breakpoint-mobile-sm) {
+                overflow-x: auto;
+            }
+            @media only screen and (max-width:$breakpoint-tablet) and (min-width: $breakpoint-mobile-sm) {
+                overflow-x: auto;
+            }
+            &.variant01{
+                table {
+                        border-collapse: collapse;
+                        width: 100%;
+                
+                        thead {
+                            background-color: #E3E3E3;
+                            border-radius: 6px;
+                
+                            tr {
+                                th {
+                                    text-transform: capitalize;
+                                    color: #000;
+                                    text-align: center;
+                                    font-family: Roboto;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: 24px;
+                
+                                    &:first-child {
+                                        border-radius: 6px 0 0 6px;
+                                    }
+                
+                                    &:last-child {
+                                        border-radius: 0 6px 6px 0;
+                                    }
+                
+                                    @media (max-width:$breakpoint-mobile-sm) {
+                                        font-size: 10px;
+                                        padding: 0.2rem 0.5rem;
+                                    }
+                
+                                    @media only screen and (max-width:$breakpoint-tablet) and (min-width: $breakpoint-mobile-sm) {
+                                        font-size: 14px;
+                                        padding: 0.2rem 0.5rem;
+                                    }
+                
+                                    @media (min-width:$breakpoint-tablet) {
+                                        padding: .5rem;
+                                    }
+                                }
+                            }
+                        }
+                
+                        tbody {
+                            tr {
+                                td {
+                                    border: 1px solid white;
+                                    border-collapse: collapse;
+                                    background-color: #B4ECD2;
+                                    color: #000;
+                                    text-align: center;
+                                    font-family: Roboto;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    border-radius: 6px;
+                                    padding: 1rem .5rem;
+                
+                                    &.color_mark_10 {
+                                        background-color: #93D1B5;
+                                        font-weight: 500;
+                                    }
+                
+                                    &.color_mark_20 {
+                                        background-color: #64B992;
+                                        font-weight: 500;
+                                    }
+                
+                                    @media (max-width:$breakpoint-mobile-sm) {
+                                        font-size: 10px;
+                                        padding: .5rem;
+                                        line-height: 10px;
+                                    }
+                
+                                    @media only screen and (max-width:$breakpoint-tablet) and (min-width: $breakpoint-mobile-sm) {
+                                        font-size: 14px;
+                                        padding: 0.5rem 0.5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+            &.variant02{
+                table {
+                        border-collapse: collapse;
+                        width: 100%;
+                
+                        thead {
+                            background-color: #BBE5C9;
+                            border-radius: 6px;
+                
+                            tr {
+                                th {
+                                    text-transform: capitalize;
+                                    color: #000;
+                                    text-align: center;
+                                    font-family: Roboto;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: 24px;
+                                    padding: .5rem;
+                
+                                    &:first-child {
+                                        border-radius: 6px 0 0 6px;
+                                    }
+                
+                                    &:last-child {
+                                        border-radius: 0 6px 6px 0;
+                                    }
+                
+                                    @media (max-width:$breakpoint-mobile-sm) {
+                                        font-size: 10px;
+                                        padding: 0.2rem 0.5rem;
+                                    }
+                
+                                    @media only screen and (max-width:$breakpoint-tablet) and (min-width: $breakpoint-mobile-sm) {
+                                        font-size: 14px;
+                                        padding: 0.2rem 0.5rem;
+                                    }
+                
+                                    @media (min-width:$breakpoint-tablet) {
+                                        padding: 1rem;
+                                    }
+                                }
+                            }
+                        }
+                
+                        tbody {
+                            tr {
+                                td {
+                                    border: 1px solid white;
+                                    border-collapse: collapse;
+                                    background-color: #E3E3E3;
+                                    color: #000;
+                                    text-align: center;
+                                    font-family: Roboto;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    border-radius: 6px;
+                                    padding: 1rem .5rem;
+                
+                                    &.color_mark_10 {
+                                        background-color: #B4ECD2;
+                                        font-weight: 500;
+                                    }
+                
+                                    &.color_mark_20 {
+                                        background-color: #93D1B5;
+                                        font-weight: 500;
+                                    }
+                                    &.color_mark_30 {
+                                        background-color: #64B992;
+                                        font-weight: 500;
+                                    }
+                
+                                    @media (max-width:$breakpoint-mobile-sm) {
+                                        font-size: 10px;
+                                        padding: .5rem;
+                                        line-height: 10px;
+                                    }
+                
+                                    @media only screen and (max-width:$breakpoint-tablet) and (min-width: $breakpoint-mobile-sm) {
+                                        font-size: 14px;
+                                        padding: 0.5rem 0.5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+            
+        }
+    }
+}

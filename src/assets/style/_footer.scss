@@ -1,0 +1,81 @@
+@import "colors", "variables";
+
+
+.footer__section{
+    margin-top: 7rem;
+    background-color: #C9C9C9;
+    .footer__container{
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 7rem 0;
+        gap: 2.5rem;
+        
+        .footer__menu{
+            flex: 1;
+            .title{
+                color: #000;
+                    font-feature-settings: 'clig' off, 'liga' off;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 26px;
+                    /* 144.444% */
+                    letter-spacing: 1.6px;
+                    padding-bottom: 1.3rem;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                li{
+                    display: block;
+                    a{
+                        display: inline-block;
+                        opacity: .7;
+                        color: #000;
+                            font-feature-settings: 'clig' off, 'liga' off;
+                            font-family: Roboto;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 26px;
+                            /* 144.444% */
+                            letter-spacing: 0.6px;
+                            padding: .6rem 0rem;
+                            transition: .4s all;
+                            &:hover{
+                                text-decoration: underline;
+
+                            }
+                    }
+                }
+            }
+        }
+        .footer__description{
+            flex: 1;
+            h4{
+                color: #000;
+                    font-family: Roboto;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 35px;
+                    padding: 1.3rem 0;
+            }
+            p{
+                color: var(--black-1, #1A1A1A);
+                    font-feature-settings: 'clig' off, 'liga' off;
+                    font-family: Roboto;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 26px;
+                    /* 173.333% */
+                    opacity: .7;
+            }
+        }
+    }
+}

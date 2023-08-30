@@ -1,0 +1,135 @@
+@import "colors", "variables";
+
+.accordion__section{
+    .accordion__container{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        @media (max-width:$breakpoint-mobile) {
+            flex-direction: column;
+        }
+        
+        .accordion__content{
+            flex: 1;
+            h3{color: var(--text, #181F1B);
+                font-family: Roboto;
+                font-size: 51px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 127%;
+                padding-bottom: 1rems;
+                @media (max-width:$breakpoint-tablet) {
+                    font-size: 2rem;
+                }
+                // @media only screen and (min-width:$breakpoint-mobile) and (max-width:$breakpoint-tablet){
+                //     font-size: 2.3rem;
+                // }
+            }
+            p{
+                opacity: .7;
+                color: var(--text, #181F1B);
+                    font-family: Roboto;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 158%;
+                    /* 37.92px */
+                    letter-spacing: 0.48px;
+                    @media (max-width:$breakpoint-tablet) {
+                            font-size: 1rem;
+                    }
+                                            
+            }
+            .accondions{
+                padding-top: 5rem;
+                padding-bottom: 3rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                @media (max-width:$breakpoint-tablet) {
+                        padding: 2rem 0;
+
+                }
+                .single_accordion{
+                    display: flex;
+                    padding: 1.3rem;
+                    gap: .5rem;
+                    align-items: center;
+                    border-radius: 20px;
+                    border: 2px solid rgba(255, 255, 255, 0.20);
+                    background: #FFF;
+                    box-shadow: 10px 10px 17px 0px rgba(194, 209, 196, 0.15);
+                    transition: .4s all;
+                    @media (max-width:$breakpoint-tablet) {
+                            padding: .7rem;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        border-radius: 20px;
+                            border: 2px solid rgba(255, 255, 255, 0.20);
+                            background: #FFF;
+                        
+                            /* Drop Shadow */
+                            box-shadow: -9px -9px 16px 0px rgba(238, 238, 238, 0.60), 10px 10px 17px 0px rgba(193, 208, 195, 0.26);
+                    }
+                    span{
+                        i{
+                            color: #B4ECD2;
+                        }
+                    }
+                    span{
+                        p{
+                            color: var(--dark, #161D25);
+                                font-family: Roboto;
+                                font-size: 22px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;    
+                                @media (max-width:$breakpoint-tablet) {
+                                        font-size: 1rem;
+                                    }
+                        }
+                    }
+                }
+            }
+            .accordion_button{
+                color: #FFF;
+                font-family: IBM Plex Sans;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                background: #58BF73;
+                padding: 1rem 2rem;
+                display: inline-block;
+                text-transform: capitalize;
+                border-radius: 10px;
+                transition: .4s all;
+                border: 1px solid #fff;
+                
+                @media (max-width:$breakpoint-desktop-sm) {
+                    font-size: 10px;
+                    padding: .5rem 1rem;
+                    border-radius: 5px;
+                }
+                
+                @media only screen and (min-width:$breakpoint-mobile-md) and (max-width:$breakpoint-tablet) {
+                    font-size: 14px;
+                    padding: 1rem 2rem;
+                    border-radius: 10px;
+                }
+                &:hover {
+                    background: transparent;
+                    color: var(--text, #181F1B);
+                    border: 1px solid var(--text, #181F1B);
+                }
+
+            }
+        }
+        .accordion__media{
+            flex: 1;
+        }
+    }
+}
